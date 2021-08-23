@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+/* Here */
+@tailwind utilities;
+
+/* Whatever is set here would be automatically placed on the comment above */
+@layer components{
+}

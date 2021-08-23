@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="font-sans bg-gray-50">
+
+    <header class="w-full bg-blue-451 h-20 flex justify-between align-center">
+
+        <img class= "w-18" src="./logo.png" alt="logo">
+
+        <div class="searchBar flex justify-center items-center align-middle">
+            <input type="text" class="input focus:ring-2 focus:ring-blue-600 h-7 w-80"  placeholder=" Enter a location: ">
+        </div>
+
+        <div class="change w-20 h-20 flex justify-center item-center py-2">
+             <span class="text-white"> C </span> 
+             <span class="text-white"> / </span> 
+             <span class="text-white"> F</span> 
+        </div>
+
+    </header>
+
+    <div class="container w-1/4 m-auto flex flex-col justify-center items-center">
+
+
+        <!-- <div class="app-title w-72 h-12 ">
+            <p class="font-bold text-center p-4 m-auto text-xl"> The weather right now:</p>
+        </div> -->
+
+        <div class="notification bg-red-200 hidden"></div>
+
+        <div class="weather-container w-72 h-64">
+
+            <div class="weather-icon w-72 h-32 flex justify-center">
+                <img src="./icons/unknown.png" alt="Description of current weater">
+            </div>
+
+            <div class="temperature-value w-72 h-14">
+                <p class=" p-0 m-0 text-6xl text-center cursor-pointer"> - <span class="text-sm"> C </span> </p>
+            </div>
+
+            <div class="temperature-description">
+                <p class="p-2 m-0 text-center text-base"> - </p>
+            </div>
+
+            <div class="location">
+                <p class="p-0 m-0 text-center text-sm"> - </p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
